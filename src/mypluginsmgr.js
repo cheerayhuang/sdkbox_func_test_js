@@ -4,7 +4,7 @@ var MyPluginsMgr = {
         // Chartboost
         sdkbox.PluginChartboost.init();
         sdkbox.PluginChartboost.setListener({
-            onChartboostCached : function (name) { console.log("onChartboostCached " + name); sdkbox.PluginChartboost.show("Level Complete"); },
+            onChartboostCached : function (name) { console.log("onChartboostCached " + name); sdkbox.PluginChartboost.show("Level Complete"); sdkbox.PluginChartboost.show("Default");},
             onChartboostShouldDisplay : function (name) { console.log("onChartboostShouldDisplay " + name) },
             onChartboostDisplay : function (name) { console.log("onChartboostDisplay " + name) },
             onChartboostDismiss : function (name) { console.log("onChartboostDismiss " + name) },
