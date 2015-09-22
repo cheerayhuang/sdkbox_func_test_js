@@ -27,9 +27,49 @@
 #include "platform/ios/JavaScriptObjCBridge.h"
 #endif
 
+
+// AdColonuy
+#include "PluginAdColonyJS.hpp"
+#include "PluginAdcolonyJSHelper.h"
+
+// charboost
+#include "PluginChartboostJS.hpp"
+#include "PluginChartboostJSHelper.h"
+
+// flurry analytics
+#include "PluginFlurryAnalyticsJS.hpp"
+#include "PluginFlurryAnalyticsJSHelper.h"
+
+// google analytics
+#include "PluginGoogleAnalyticsJS.hpp"
+
+// iap
+#include "PluginIAPJS.hpp"
+#include "PluginIAPJSHelper.h"
+
+// kochava
+#include "PluginKochavaJS.hpp"
+
+// tune
+#include "PluginTuneJS.hpp"
+#include "PluginTuneJSHelper.h"
+
+// vungle
+#include "PluginVungleJS.hpp"
+#include "PluginVungleJSHelper.h"
+
+// facebook
+#include "PluginFacebookJS.hpp"
+#include "PluginFacebookJSHelper.h"
+
+// agecheq
+#include "PluginAgeCheqJS.hpp"
+#include "PluginAgeCheqJSHelper.h"
+
 USING_NS_CC;
 int js_module_register()
 {
+    
     ScriptingCore* sc = ScriptingCore::getInstance();
     sc->addRegisterCallback(register_all_cocos2dx);
     sc->addRegisterCallback(register_cocos2dx_js_core);
@@ -73,6 +113,45 @@ int js_module_register()
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_IOS|| CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
     sc->addRegisterCallback(JavaScriptObjCBridge::_js_register);
 #endif
+    
+    // adcolony
+    sc->addRegisterCallback(register_all_PluginAdColonyJS);
+    sc->addRegisterCallback(register_all_PluginAdColonyJS_helper);
+    
+    // chartboost
+    sc->addRegisterCallback(register_all_PluginChartboostJS);
+    sc->addRegisterCallback(register_all_PluginChartboostJS_helper);
+    
+    // flurry analytics
+    sc->addRegisterCallback(register_all_PluginFlurryAnalyticsJS);
+    sc->addRegisterCallback(register_all_PluginFlurryAnalyticsJS_helper);
+    
+    // google analytics
+    sc->addRegisterCallback(register_all_PluginGoogleAnalyticsJS);
+    
+    // iap
+    sc->addRegisterCallback(register_all_PluginIAPJS);
+    sc->addRegisterCallback(register_all_PluginIAPJS_helper);
+    
+    // kochava
+    sc->addRegisterCallback(register_all_PluginKochavaJS);
+    
+    // tune
+    sc->addRegisterCallback(register_all_PluginTuneJS);
+    sc->addRegisterCallback(register_all_PluginTuneJS_helper);
+    
+    // vungle
+    sc->addRegisterCallback(register_all_PluginVungleJS);
+    sc->addRegisterCallback(register_all_PluginVungleJS_helper);
+    
+    // facebook
+    sc->addRegisterCallback(register_all_PluginFacebookJS);
+    sc->addRegisterCallback(register_all_PluginFacebookJS_helper);
+    
+    // agecheq
+    sc->addRegisterCallback(register_all_PluginAgeCheqJS);
+    sc->addRegisterCallback(register_all_PluginAgeCheqJS_helper);
+    
     return 1;
 }
 
