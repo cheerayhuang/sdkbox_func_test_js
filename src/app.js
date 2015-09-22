@@ -11,19 +11,46 @@ var HelloWorldLayer = cc.Layer.extend({
         this.mgr = mgr;
 
         console.log("set scheduler callback.");
-        var scheduler = director.getScheduler();
-        // Chartboost
+
         var delayTime = 2.0
-        scheduler.scheduleCallbackForTarget(this, this.chartboostFunc, 0, cc.REPEAT_FOREVER, delayTime, false);
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.chartboostFunc, 0, 0, delayTime, false);
 
         delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.adcolonyFunc, 0, 0, delayTime, false);
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.flurryFunc, 0, 0, delayTime, false);
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.vungleFunc, 0, 0, delayTime, false);
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.googleFunc, 0, 0, delayTime, false);
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.tuneFunc, 0, 0, delayTime, false);
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.iapFunc, 0, 0, delayTime, false);
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.facebookFunc, 0, 0, delayTime, false);
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.kochavaFunc, 0, 0, delayTime, false);
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.agecheqFunc, 0, 0, delayTime, false);
+
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.reviewFunc, 0, 0, delayTime, false);
+
+        delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.fyberFunc, 0, 0, delayTime, false);
 
         return true;
     },
-
-    chartboostFunc:function(dt) {
-        this.mgr.chartboostFunc(dt);
-    }
 });
 
 var HelloWorldScene = cc.Scene.extend({
