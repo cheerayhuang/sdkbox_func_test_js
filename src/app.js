@@ -15,8 +15,8 @@ var HelloWorldLayer = cc.Layer.extend({
         var delayTime = 2.0
         cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.chartboostFunc, 0, 0, delayTime, false);
 
-        delayTime += 2;
-        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.adcolonyFunc, 0, 0, delayTime, false);
+        /*delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.adcolonyFunc, 0, 0, delayTime, false);*/
 
         delayTime += 2;
         cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.flurryFunc, 0, 0, delayTime, false);
@@ -46,8 +46,8 @@ var HelloWorldLayer = cc.Layer.extend({
         delayTime += 2;
         cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.reviewFunc, 0, 0, delayTime, false);
 
-        delayTime += 2;
-        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.fyberFunc, 0, 0, delayTime, false);
+        /*delayTime += 2;
+        cc.director.getScheduler().scheduleCallbackForTarget(mgr, mgr.fyberFunc, 0, 0, delayTime, false); */
 
         return true;
     },
