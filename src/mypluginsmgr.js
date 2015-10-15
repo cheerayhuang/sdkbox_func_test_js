@@ -1,7 +1,7 @@
 var MyPluginsMgr = {
     init:function() {
              // AdColony
-             console.log("init AdColony")
+             /*console.log("init AdColony")
                  sdkbox.PluginAdColony.init();
              sdkbox.PluginAdColony.setListener({
                  onAdColonyChange : function (data, available) {
@@ -22,7 +22,7 @@ var MyPluginsMgr = {
                                           // Called when an ad finish displaying
                                           console.log("AdColony ends playing.");
                                       }
-             });
+             });*/
 
              // Chartboost
              console.log("init Chartboost")
@@ -144,7 +144,7 @@ var MyPluginsMgr = {
              });
 
              // Fyber
-             sdkbox.PluginFyber.init();
+             /*sdkbox.PluginFyber.init();
              sdkbox.PluginFyber.setListener({
                  onVirtualCurrencyConnectorFailed : function(error, errorCode, errorMsg) {
                                                         console.log("onVirtualCurrencyConnectorFailed: " + error + " " + errorCode + " " +errorMsg);
@@ -186,7 +186,7 @@ var MyPluginsMgr = {
                 onOfferWallFinish : function(s) {
                     console.log("onOfferWallFinish: " + s);
                 }
-             });
+             });*/
 
              // Review
              sdkbox.PluginReview.init();
