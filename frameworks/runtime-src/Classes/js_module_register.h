@@ -29,8 +29,8 @@
 
 
 // AdColonuy
-#include "PluginAdColonyJS.hpp"
-#include "PluginAdcolonyJSHelper.h"
+//#include "PluginAdColonyJS.hpp"
+//#include "PluginAdcolonyJSHelper.h"
 
 // charboost
 #include "PluginChartboostJS.hpp"
@@ -67,8 +67,8 @@
 #include "PluginAgeCheqJSHelper.h"
 
 // fyber
-#include "PluginFyberJS.hpp"
-#include "PluginFyberJSHelper.h"
+//#include "PluginFyberJS.hpp"
+//#include "PluginFyberJSHelper.h"
 
 // review
 #include "PluginReviewJS.hpp"
@@ -123,8 +123,8 @@ int js_module_register()
 #endif
 
     // adcolony
-    sc->addRegisterCallback(register_all_PluginAdColonyJS);
-    sc->addRegisterCallback(register_all_PluginAdColonyJS_helper);
+    //sc->addRegisterCallback(register_all_PluginAdColonyJS);
+    //sc->addRegisterCallback(register_all_PluginAdColonyJS_helper);
 
     // chartboost
     sc->addRegisterCallback(register_all_PluginChartboostJS);
@@ -161,8 +161,8 @@ int js_module_register()
     sc->addRegisterCallback(register_all_PluginAgeCheqJS_helper);
 
     // fyber
-    sc->addRegisterCallback(register_all_PluginFyberJS);
-    sc->addRegisterCallback(register_all_PluginFyberJS_helper);
+    //sc->addRegisterCallback(register_all_PluginFyberJS);
+    //sc->addRegisterCallback(register_all_PluginFyberJS_helper);
 
     // review
     sc->addRegisterCallback(register_all_PluginReviewJS);
