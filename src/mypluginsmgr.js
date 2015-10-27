@@ -198,9 +198,9 @@ var MyPluginsMgr = {
              });
          },
 
-    adcolonyFunc: function(dt) {
+    /*adcolonyFunc: function(dt) {
                       console.log("calling adcolonyFunc");
-                  },
+                  }, */
 
     chartboostFunc: function(dt) {
                         console.log("calling chartboostFunc");
@@ -288,13 +288,13 @@ var MyPluginsMgr = {
                      sdkbox.PluginAgeCheq.check("1426");
                  },
 
-    fyberFunc: function(dt) {
+    /*fyberFunc: function(dt) {
                     console.log("calling fyberFunc");
                     sdkbox.PluginFyber.requestInterstitial();
                     sdkbox.PluginFyber.showOffWall("rmb");
                     sdkbox.requestOffers("rmb");
                     sdkbox.requestDeltaOfCoins("rmb");
-               },
+               },*/
 
     reviewFunc: function(dt) {
                     console.log("calling reviewFunc");
