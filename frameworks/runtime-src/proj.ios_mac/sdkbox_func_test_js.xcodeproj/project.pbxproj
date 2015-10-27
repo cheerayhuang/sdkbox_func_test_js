@@ -51,6 +51,7 @@
 		58A641E1A6C0AEB0C58ED696 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C94F75A9CD20445942C647 /* libcocos2d Mac.a */; };
 		5CA742C68BEF6831F9BBCB9A /* script in Resources */ = {isa = PBXBuildFile; fileRef = 3AF548079E4DCC8ABB162091 /* script */; };
 		87D4C4451AB2187000F68C44 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D4C4441AB2187000F68C44 /* Security.framework */; };
+		951447A21BDF828D00ECBE62 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 951447A11BDF828D00ECBE62 /* libiconv.tbd */; };
 		9F20C9E61A5BD38A006FB50B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F20C9E11A5BBE85006FB50B /* Security.framework */; };
 		9FD1E6B11A51361B0009A6C5 /* ConsoleWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1E69E1A51361B0009A6C5 /* ConsoleWindow.xib */; };
 		9FD1E6B21A51361B0009A6C5 /* ConsoleWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1E6A01A51361B0009A6C5 /* ConsoleWindowController.m */; };
@@ -132,6 +133,7 @@
 		69764A0CBBA63DA2380140A1 /* libjscocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libjscocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios/libjscocos2d iOS.a"; sourceTree = "<absolute>"; };
 		87D4C4441AB2187000F68C44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8D8343929314773AE1443CD9 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
+		951447A11BDF828D00ECBE62 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
 		95F14CA681C99ECE9C9848B1 /* libsimulator iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsimulator iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios/libsimulator iOS.a"; sourceTree = "<absolute>"; };
 		9F20C9E11A5BBE85006FB50B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		9FD1E69E1A51361B0009A6C5 /* ConsoleWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleWindow.xib; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951447A21BDF828D00ECBE62 /* libiconv.tbd in Frameworks */,
 				9F20C9E61A5BD38A006FB50B /* Security.framework in Frameworks */,
 				BA4E718719EB6E7900932425 /* MediaPlayer.framework in Frameworks */,
 				D6B061241803AB9F0077942B /* CoreMotion.framework in Frameworks */,
@@ -354,8 +357,7 @@
 		A92275401517C094001B78AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BA4E718219EB6E4600932425,
-				BA4E718019EB6E3E00932425,
+				951447A11BDF828D00ECBE62 /* libiconv.tbd */,
 				87D4C4441AB2187000F68C44 /* Security.framework */,
 				9F20C9E11A5BBE85006FB50B /* Security.framework */,
 				D6B061231803AB9F0077942B /* CoreMotion.framework */,
@@ -578,18 +580,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FD1E6B61A51361B0009A6C5 /* PlayerFileDialogServiceMac.mm in Sources */,
-				3E12D1E61957FB18002FF0FD,
 				9FD1E6B51A51361B0009A6C5 /* PlayerEditBoxServiceMac.mm in Sources */,
-				9FD1E6EE1A5169230009A6C5,
 				9FD1E6B21A51361B0009A6C5 /* ConsoleWindowController.m in Sources */,
-				3E12D1E81957FB18002FF0FD,
-				9FD1E6ED1A5169230009A6C5,
-				3E12D1E01957FB18002FF0FD,
-				3E12D1D61957FB18002FF0FD,
-				C00FD4B51938628E00C6382D,
-				AB9079D519E931D80033128B,
-				3E12D1EA1957FB18002FF0FD,
-				C06C37891918E81100617BED,
 				9FD1E6B71A51361B0009A6C5 /* PlayerMac.mm in Sources */,
 				509D4A8117EBB24E00697056 /* AppDelegate.cpp in Sources */,
 				9FD1E6BA1A51361B0009A6C5 /* PlayerTaskServiceMac.mm in Sources */,
@@ -654,10 +646,7 @@
 					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib/protobuf-lite",
 				);
 				INFOPLIST_FILE = mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/mac",
-				);
+				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
@@ -687,10 +676,7 @@
 					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib/protobuf-lite",
 				);
 				INFOPLIST_FILE = mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/mac",
-				);
+				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
@@ -766,11 +752,8 @@
 					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib/protobuf-lite",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios";
 				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -799,11 +782,8 @@
 					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib/protobuf-lite",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios";
 				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
